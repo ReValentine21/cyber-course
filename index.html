@@ -1,0 +1,280 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая гигиена 2026 | PRO Защита</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Современные шрифты для техно-стиля -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #030712; /* Глубокий темный фон */
+            --accent-cyan: #06b6d4; /* Неоновый голубой */
+            --accent-glow: rgba(6, 182, 212, 0.5);
+            --card-bg: rgba(17, 24, 39, 0.7);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            /* Легкий фоновый паттерн в виде сетки */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        h1, h2, h3, .tech-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Стеклянные карточки с неоновым свечением при наведении */
+        .cyber-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .cyber-card:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+            transform: translateY(-4px);
+        }
+
+        /* Анимация сканирующей линии для видео */
+        .video-container {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            background: #000;
+        }
+
+        .video-inner {
+            aspect-ratio: 16/9;
+            width: 100%;
+        }
+
+        .glow-btn {
+            background: linear-gradient(90deg, #06b6d4, #3b82f6);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .glow-btn:hover {
+            box-shadow: 0 0 25px var(--accent-glow);
+            transform: scale(1.02);
+        }
+
+        /* Легкие и плавные анимации появления без лагов */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Скрытая надпись Well */
+        .well-mark {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.1);
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+        .well-mark:hover { color: rgba(255, 255, 255, 0.5); }
+    </style>
+</head>
+<body class="px-4 md:px-8">
+
+    <!-- Верхняя панель (Фейк API для солидности) -->
+    <div class="max-w-6xl mx-auto py-4 flex justify-between items-center border-b border-gray-800 animate-on-scroll">
+        <div class="flex items-center gap-2">
+            <i data-lucide="shield-check" class="text-cyan-500 w-5 h-5"></i>
+            <span class="tech-font font-bold text-lg tracking-wider">DEFENSE_26</span>
+        </div>
+        <div class="text-[10px] text-gray-500 tech-font uppercase tracking-widest hidden md:block">
+            Status: <span class="text-green-500">Secure</span> | Node: 942-X
+        </div>
+    </div>
+
+    <!-- Первый экран -->
+    <header class="max-w-4xl mx-auto pt-12 md:pt-20 pb-16 text-center animate-on-scroll">
+        <!-- Исправлен отступ между словами в заголовке (leading-tight) -->
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+            Цифровая <br> Гигиена
+        </h1>
+        
+        <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
+            Практический видео-курс по защите персональных данных, безопасности финансов и борьбе с интернет-угрозами.
+        </p>
+
+        <!-- Блок видео (Трафик-алиби) -->
+        <div class="video-container mx-auto max-w-3xl mb-4">
+            <!-- Декоративная плашка сверху видео -->
+            <div class="bg-gray-900 px-4 py-2 flex justify-between items-center border-b border-gray-800 text-[10px] text-cyan-500 tech-font uppercase">
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                    Live: Анализ угроз
+                </span>
+                <span>/api/v1/stream</span>
+            </div>
+            
+            <div class="video-inner">
+                <!-- ВНИМАНИЕ: СЮДА НУЖНО ВСТАВИТЬ НОВУЮ ССЫЛКУ НА RUTUBE -->
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://rutube.ru/play/embed/b5e28a4be01ccf0be5296860ad87819f/" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media; fullscreen" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <p class="text-[11px] text-gray-600 tech-font uppercase tracking-widest">
+            * Вводная лекция предоставлена в ознакомительных целях (Длительность: 03:12:40)
+        </p>
+    </header>
+
+    <!-- Программа обучения (Исправлены отступы) -->
+    <section class="max-w-6xl mx-auto py-12 md:py-20">
+        <div class="flex items-center gap-4 justify-center mb-12 animate-on-scroll">
+            <div class="h-[1px] w-12 bg-cyan-500/50"></div>
+            <h2 class="tech-font text-2xl md:text-3xl font-bold uppercase tracking-widest text-cyan-400">Программа курса</h2>
+            <div class="h-[1px] w-12 bg-cyan-500/50"></div>
+        </div>
+        
+        <!-- Сетка адаптирована: 1 колонка на телефоне, 2 на планшете, 4 на ПК -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="cyber-card p-8 animate-on-scroll">
+                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center mb-6 border border-cyan-500/30">
+                    <i data-lucide="key" class="text-cyan-400 w-6 h-6"></i>
+                </div>
+                <h3 class="tech-font text-xl mb-3 font-bold">Пароли & 2FA</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Методы создания неуязвимых ключей доступа и настройки биометрической защиты.
+                </p>
+            </div>
+
+            <div class="cyber-card p-8 animate-on-scroll" style="transition-delay: 0.1s;">
+                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center mb-6 border border-cyan-500/30">
+                    <i data-lucide="scan-face" class="text-cyan-400 w-6 h-6"></i>
+                </div>
+                <h3 class="tech-font text-xl mb-3 font-bold">Фишинг</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Анализ поддельных ссылок и методов социальной инженерии в мессенджерах.
+                </p>
+            </div>
+
+            <div class="cyber-card p-8 animate-on-scroll" style="transition-delay: 0.2s;">
+                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center mb-6 border border-cyan-500/30">
+                    <i data-lucide="wifi" class="text-cyan-400 w-6 h-6"></i>
+                </div>
+                <h3 class="tech-font text-xl mb-3 font-bold">Сети</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Безопасное использование Wi-Fi в общественных местах и шифрование трафика.
+                </p>
+            </div>
+
+            <div class="cyber-card p-8 animate-on-scroll" style="transition-delay: 0.3s;">
+                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center mb-6 border border-cyan-500/30">
+                    <i data-lucide="credit-card" class="text-cyan-400 w-6 h-6"></i>
+                </div>
+                <h3 class="tech-font text-xl mb-3 font-bold">Платежи</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Защита банковских карт при покупках в интернете и лимиты безопасности.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Оплата -->
+    <section class="max-w-3xl mx-auto py-12 md:py-20 animate-on-scroll">
+        <div class="cyber-card p-8 md:p-16 text-center relative overflow-hidden">
+            <!-- Фоновое свечение -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <h2 class="tech-font text-2xl text-gray-300 mb-2 relative z-10">Полный доступ к курсу</h2>
+            <p class="text-sm text-gray-500 mb-8 relative z-10">Все материалы будут доступны в закрытом Telegram-боте.</p>
+            
+            <div class="flex justify-center items-end gap-2 mb-10 relative z-10">
+                <span class="tech-font text-6xl md:text-8xl font-bold text-white leading-none">99</span>
+                <span class="tech-font text-2xl md:text-4xl text-cyan-400 font-bold mb-1">РУБ</span>
+            </div>
+            
+            <!-- ССЫЛКА НА ОПЛАТУ -->
+            <a href="ТВОЯ_ССЫЛКА_НА_ОПЛАТУ_ИЛИ_БОТА" class="glow-btn px-8 md:px-16 py-5 inline-flex items-center gap-3 w-full md:w-auto justify-center text-sm relative z-10">
+                <span>Получить доступ</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Футер (Юридический) -->
+    <footer class="max-w-6xl mx-auto pt-12 pb-8 border-t border-gray-800 animate-on-scroll">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12 text-center md:text-left">
+            <div>
+                <div class="tech-font text-xl font-bold text-gray-300 mb-2">CYBER DEFENSE // 2026</div>
+                <p class="text-[10px] text-gray-600 tech-font uppercase tracking-widest leading-relaxed">
+                    Образовательная IT-платформа<br>
+                    API Endpoint: /api/v1/video-stream/cdn-v4<br>
+                    Build ID: 942-SECURE
+                </p>
+            </div>
+            
+            <!-- ССЫЛКИ НА ДОКУМЕНТЫ -->
+            <div class="flex flex-wrap justify-center md:justify-end gap-6 text-[11px] text-gray-500 uppercase tracking-wider">
+                <a href="oferta.html" class="hover:text-cyan-400 transition-colors">Оферта</a>
+                <a href="privacy.html" class="hover:text-cyan-400 transition-colors">Конфиденциальность</a>
+                <a href="mailto:support@твойдомен.ru" class="hover:text-cyan-400 transition-colors">Поддержка (Email)</a>
+            </div>
+        </div>
+
+        <div class="text-center pt-8">
+            <span class="well-mark tech-font">Developed by Well</span>
+        </div>
+    </footer>
+
+    <!-- Скрипт для иконок и анимаций (работает мгновенно) -->
+    <script>
+        // Инициализация иконок
+        lucide.createIcons();
+
+        // Простой и быстрый скрипт для плавного появления блоков при скролле
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
