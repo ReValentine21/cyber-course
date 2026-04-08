@@ -6,13 +6,13 @@
     <title>Цифровая гигиена 2026 | PRO Защита</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Современные шрифты для техно-стиля -->
+    <!--шрифты!-->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-color: #030712; /* Глубокий темный фон */
-            --accent-cyan: #06b6d4; /* Неоновый голубой */
+            --bg-color: #030712; 
+            --accent-cyan: #06b6d4; 
             --accent-glow: rgba(6, 182, 212, 0.5);
             --card-bg: rgba(17, 24, 39, 0.7);
         }
@@ -22,7 +22,7 @@
             color: #f3f4f6;
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
-            /* Легкий фоновый паттерн в виде сетки */
+            
             background-image: 
                 linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
@@ -33,7 +33,7 @@
             font-family: 'Space Grotesk', sans-serif;
         }
 
-        /* Стеклянные карточки с неоновым свечением при наведении */
+        
         .cyber-card {
             background: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -48,7 +48,7 @@
             transform: translateY(-4px);
         }
 
-        /* Анимация сканирующей линии для видео */
+        
         .video-container {
             position: relative;
             border-radius: 16px;
@@ -80,7 +80,7 @@
             transform: scale(1.02);
         }
 
-        /* Легкие и плавные анимации появления без лагов */
+        
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(20px);
@@ -92,7 +92,7 @@
             transform: translateY(0);
         }
 
-        /* Скрытая надпись Well */
+        
         .well-mark {
             font-size: 10px;
             color: rgba(255, 255, 255, 0.1);
@@ -104,7 +104,7 @@
 </head>
 <body class="px-4 md:px-8">
 
-    <!-- Верхняя панель (Фейк API для солидности) -->
+    
     <div class="max-w-6xl mx-auto py-4 flex justify-between items-center border-b border-gray-800 animate-on-scroll">
         <div class="flex items-center gap-2">
             <i data-lucide="shield-check" class="text-cyan-500 w-5 h-5"></i>
@@ -115,9 +115,9 @@
         </div>
     </div>
 
-    <!-- Первый экран -->
+    
     <header class="max-w-4xl mx-auto pt-12 md:pt-20 pb-16 text-center animate-on-scroll">
-        <!-- Исправлен отступ между словами в заголовке (leading-tight) -->
+        
         <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
             Цифровая <br> Гигиена
         </h1>
@@ -126,9 +126,9 @@
             Практический видео-курс по защите персональных данных, безопасности финансов и борьбе с интернет-угрозами.
         </p>
 
-        <!-- Блок видео (Трафик-алиби) -->
+        
         <div class="video-container mx-auto max-w-3xl mb-4">
-            <!-- Декоративная плашка сверху видео -->
+            
             <div class="bg-gray-900 px-4 py-2 flex justify-between items-center border-b border-gray-800 text-[10px] text-cyan-500 tech-font uppercase">
                 <span class="flex items-center gap-2">
                     <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
@@ -138,7 +138,7 @@
             </div>
             
             <div class="video-inner">
-                <!-- ВНИМАНИЕ: СЮДА НУЖНО ВСТАВИТЬ НОВУЮ ССЫЛКУ НА RUTUBE -->
+                <!--ССЫЛКУ НА RUTUBE -->
                 <iframe 
                     width="100%" 
                     height="100%" 
@@ -154,7 +154,7 @@
         </p>
     </header>
 
-    <!-- Программа обучения (Исправлены отступы) -->
+    
     <section class="max-w-6xl mx-auto py-12 md:py-20">
         <div class="flex items-center gap-4 justify-center mb-12 animate-on-scroll">
             <div class="h-[1px] w-12 bg-cyan-500/50"></div>
@@ -162,7 +162,7 @@
             <div class="h-[1px] w-12 bg-cyan-500/50"></div>
         </div>
         
-        <!-- Сетка адаптирована: 1 колонка на телефоне, 2 на планшете, 4 на ПК -->
+        
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <div class="cyber-card p-8 animate-on-scroll">
@@ -208,10 +208,9 @@
         </div>
     </section>
 
-    <!-- Оплата -->
     <section class="max-w-3xl mx-auto py-12 md:py-20 animate-on-scroll">
         <div class="cyber-card p-8 md:p-16 text-center relative overflow-hidden">
-            <!-- Фоновое свечение -->
+            
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
             
             <h2 class="tech-font text-2xl text-gray-300 mb-2 relative z-10">Полный доступ к курсу</h2>
@@ -222,7 +221,7 @@
                 <span class="tech-font text-2xl md:text-4xl text-cyan-400 font-bold mb-1">РУБ</span>
             </div>
             
-            <!-- ССЫЛКА НА ОПЛАТУ -->
+            <!--ССЫЛКА НА ОПЛАТУ-->
             <a href="https://t.me/nota_vpn_bot" class="glow-btn px-8 md:px-16 py-5 inline-flex items-center gap-3 w-full md:w-auto justify-center text-sm relative z-10">
                 <span>Получить доступ</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
@@ -230,7 +229,7 @@
         </div>
     </section>
 
-    <!-- Футер (Юридический) -->
+    
     <footer class="max-w-6xl mx-auto pt-12 pb-8 border-t border-gray-800 animate-on-scroll">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12 text-center md:text-left">
             <div>
@@ -242,7 +241,7 @@
                 </p>
             </div>
             
-            <!-- ССЫЛКИ НА ДОКУМЕНТЫ -->
+            <!--ССЫЛКИ -->
             <div class="flex flex-wrap justify-center md:justify-end gap-6 text-[11px] text-gray-500 uppercase tracking-wider">
                 <a href="oferta.html" class="hover:text-cyan-400 transition-colors">Оферта</a>
                 <a href="privacy.html" class="hover:text-cyan-400 transition-colors">Конфиденциальность</a>
@@ -255,12 +254,12 @@
         </div>
     </footer>
 
-    <!-- Скрипт для иконок и анимаций (работает мгновенно) -->
+    
     <script>
-        // Инициализация иконок
+        
         lucide.createIcons();
 
-        // Простой и быстрый скрипт для плавного появления блоков при скролле
+        
         document.addEventListener("DOMContentLoaded", () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -277,3 +276,5 @@
     </script>
 </body>
 </html>
+
+<!-- Well :> !-->
